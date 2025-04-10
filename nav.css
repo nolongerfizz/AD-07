@@ -1,0 +1,22 @@
+
+
+nav {
+
+    background-color: #444;
+    color:bisque;
+    padding: 25px;
+    text-align: center;
+
+  }
+
+  nav a {
+
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  img{
+    max-width: 150px;
+    margin-right: 900px;
+  }
