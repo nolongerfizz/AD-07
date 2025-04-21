@@ -6,84 +6,82 @@
 
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #ffffff;
-    color: black;
+    font-family:'Inter', sans-serif;
+    background-color: black;
+    color: white;
     line-height: 1.6;
     padding: 2rem;
 }
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
+.intro {
+    background: linear-gradient(to right, #f1502f, #131009, #f1502f);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
 }
 
-section {
-    margin-bottom: 4rem;
-}
-
-h1, h2, h3 {
-    color: black;
-    text-align: center;
-}
-
-h1 {
+.intro-title {
     font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-
 }
 
-h2 {
+.intro-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #d1d1d1;
+}
+
+.about {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+}
+
+.about-title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #f1502f;
 }
 
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: normal;
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
 }
 
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+.about strong {
+    color: #cf8576;
 }
-
-.member {
-    background-color: gray;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    width: 200px;
-}
-
-.member img {
+.small-card {
+    max-width: 350px; 
+    margin: 10px auto;
+  }
+  
+  .small-card img {
+    height: 380px; 
+    object-fit: cover;
     width: 100%;
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
+  }
+
+.bg-1 {
+    background-color: bisque;
 }
 
-
-.resources {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+.btn-outline-info {
+    background-color: #f1502f;
+    color: #000;
+    font-weight: bold;
+    border-color:#cf8576;
 }
 
-.resource {
-    background-color: gray;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    width: 200px;
+.btn-outline-info:hover{
+    color: #f1502f;
+    background-color: white;
+    border: salmon;
 }
 
-.resource img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
+.small-card-curso {
+    background-color: #d1d1d1;
 }
