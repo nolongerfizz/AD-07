@@ -1,0 +1,88 @@
+/* Body styling */
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #cccccc;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Section styling */
+  section {
+    max-width: 900px;
+    margin: auto;
+    padding: 2em;
+  }
+  
+  /* Styling for headings */
+  h1, h2 {
+    color: #e0e0e0;
+  }
+  
+  /* Add custom styling for the GitClub title in orange */
+  .git-orange {
+    color: #f1502f;
+    font-weight: bold;
+  }
+  
+  /* Image styling to make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 8px;
+  }
+  
+  /* Add padding around cards for spacing */
+  .card {
+    background-color: #1a1a1a; /* Dark background for cards */
+    border-radius: 8px;
+    color: #cccccc; /* Text color for card content */
+  }
+  
+  /* Add custom spacing to buttons */
+  .btn {
+    margin-top: 1em;
+  }
+  
+  /* Custom styling for paragraphs */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Additional styling for the collapsible sections */
+  .collapse {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 1em;
+  }
+  
+  pre {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 1em;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  code {
+    font-size: 1.1em;
+    color: #f1502f;
+  }
+  
+  /* Ensure the card text is properly spaced */
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  /* Bootstrap margin utilities for the cards */
+  .card + .card {
+    margin-top: 1.5rem;
+  }
+  
