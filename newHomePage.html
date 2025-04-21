@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitClub - Comandos útiles</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="newHomePage.css">
+</head>
+<body>
+
+  <!-- Added Bootstrap container and spacing -->
+  <section class="container py-5">
+    <!-- Navegación principal -->
+    <!-- Damos la bienvenida a la pagina-->
+    <h1>Bienvenidos a <span class="git-orange">GitClub</span></h1>
+
+    <!-- Parrafo para introducir github-->
+    <p>GitClub es un lugar amigable para que los principiantes aprendan Git y GitHub. 
+      Ya sea que estés empezando o quieras practicar, ¡este es tu sitio!</p>
+
+    <!-- Hablar sobre que es Git-->
+    <h2>¿Qué es <span class="git-orange">Git</span>?</h2>
+
+    <!-- Explicar en un parrafo que es git-->
+    <p>Git es un sistema de control de versiones que te ayuda a guardar los cambios en tu código 
+       y trabajar en equipo sin perder tu progreso. 
+       Es como una máquina del tiempo para tus proyectos.</p>
+
+    <!-- Insertar imagen relacionada con Git -->
+    <!-- Added Bootstrap class to make it responsive -->
+    <img src="/Pic/git.png" alt="Logo de Git" class="img-fluid">
+
+    <!-- Hablar sobre que es Github-->
+    <h2>¿Qué es GitHub?</h2>
+
+    <!-- Explicar que es GitHub-->
+    <p>GitHub es una plataforma en línea donde puedes guardar tus proyectos que usan Git. 
+      También te permite colaborar con otras personas, ver los cambios en el código, 
+      y trabajar en equipo de forma organizada desde cualquier lugar.</p>
+
+    <!-- Insertar imagen Github -->
+    <!-- Added Bootstrap class to make it responsive -->
+    <img src="/Pic/github.png" alt="Logo de GitHub" class="img-fluid">
+    
+    <h2>!Empieza a aprender Git hoy!</h2>
+
+    <p>En GitClub estamos aquí para ayudarte a aprender paso a paso. 
+      Explora, practica y mejora tus habilidades con nosotros. ¡Nunca es tarde para comenzar!</p>
+  </section>
+
+  <section class="container py-5">
+    <!-- Center text horizontally - Applies my orange class - Add marging at the button-->
+    <h1 class="text-center git-orange mb-4">GitClub</h1>
+    <!-- Bootstrap class lead for lighter text - Center parapragh - add marging-->
+    <p class="lead text-center mb-5">Encuentra comandos comunes de Git y aprende a crear y desplegar tus repositorios.</p>
+    <!-- g-4: adds spacing between cards responsively-->
+    <div class="row g-4">
+
+      <!-- Card 1: Crear repositorio -->
+      <!-- This takes 6 out of the 12 colums-->  
+      <div class="col-md-6">
+        <!-- Gives a bootstrap container(card) and a padding between text and edges-->
+        <div class="card p-3">
+          <!-- text and title are Bootstrap styles to format content inside cards-->  
+          <h5 class="card-title">Crear un repositorio</h5>
+          <p class="card-text">Inicia tu proyecto con Git desde cero.</p>
+          <button class="btn btn-outline-light"
+                data-bs-toggle="collapse" 
+                data-bs-target="#repoCollapse1"
+                aria-expanded="false" 
+                aria-controls="repoCollapse1">
+                Ver comandos
+          </button>
+          <!-- collapse Bootstrap component for show, hide and mt adds marging-->
+          <div class="collapse mt-3" id="repoCollapse1">
+            <pre><code>
+                git init
+                git add .
+                git commit -m "primer commit"
+                git branch -M main
+                git remote add origin https://github.com/usuario/repositorio.git
+                git push -u origin main
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Clonar repositorio -->
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="card-title">Clonar un repositorio</h5>
+          <p class="card-text">Copiar un repositorio existente desde GitHub.</p>
+          <button class="btn btn-outline-light" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#repoCollapse2"
+                  aria-expanded="false" 
+                  aria-controls="repoCollapse2">
+            Ver comandos
+          </button>
+          <div class="collapse mt-3" id="repoCollapse2">
+            <pre><code>
+                git clone https://github.com/usuario/repositorio.git
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Enviar cambios -->
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="card-title">Enviar cambios</h5>
+          <p class="card-text">Sube tus commits al repositorio remoto.</p>
+          <button class="btn btn-outline-light" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#repoCollapse3"
+                  aria-expanded="false" 
+                  aria-controls="repoCollapse3">
+            Ver comandos
+          </button>
+          <div class="collapse mt-3" id="repoCollapse3">
+            <pre><code>
+                git add .
+                git commit -m "Descripción"
+                git push
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Ver estado -->
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="card-title">Ver estado del repositorio</h5>
+          <p class="card-text">Comprueba qué archivos han cambiado.</p>
+          <button class="btn btn-outline-light" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#repoCollapse4"
+                  aria-expanded="false" 
+                  aria-controls="repoCollapse4">
+            Ver comandos
+          </button>
+          <div class="collapse mt-3" id="repoCollapse4">
+            <pre><code>
+                git status
+                git log
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
